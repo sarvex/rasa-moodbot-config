@@ -1,0 +1,34 @@
+[
+  {
+    "text": "sad",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.9515606164932251
+    }
+  },
+  {
+    "text": "very sad",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.6543643474578857
+    }
+  },
+  {
+    "text": "so sad",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.7074460387229919
+    }
+  },
+  {
+    "text": "bad",
+    "intent": "react_negative",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.5301985144615173
+    }
+  }
+]

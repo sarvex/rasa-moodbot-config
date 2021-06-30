@@ -1,0 +1,1053 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - hey there
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you around
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - very good
+    - great
+    - amazing
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I'm good
+- intent: mood_unhappy
+  examples: |
+    - sad
+    - very sad
+    - unhappy
+    - bad
+    - very bad
+    - awful
+    - terrible
+    - not very good
+    - extremely sad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: why_rasa
+  examples: |
+    - why should i use rasa instead of google [dialogflow](current_api)
+    - why rasa
+    - why should I use rasa?
+    - why should I switch to rasa?
+    - what's so great about using Rasa?
+    - how is rasa's NLU better than [watson](current_api) 's
+    - why should i use rasa instead of IBM [watson](current_api) ?
+    - Is it better to use rasa or [luis](current_api)?
+    - Is rasa better than google [dialogflow](current_api)?
+    - what sets rasa apart?
+    - give me a reason to use Rasa
+    - why should I switch to rasa from [dialogflow](current_api)
+    - why should I switch from [luis](current_api)
+    - give me a reason to switch to Rasa from [luis](current_api)
+    - Why switch to Rasa?
+- intent: ask_how_contribute
+  examples: |
+    - Can I assist?
+    - Can I help improve your code at all?
+    - How can I add code to Rasa
+    - How can I assist the cause?
+    - How can I be a contributor?
+    - How can I be helpful?
+    - How can I be more involved?
+    - How can I contribute to your code
+    - How can I help with the code?
+    - How can I help you?
+    - How can be of assistance?
+    - How can one contribute to this cause?
+    - How can one contribute?
+    - How does one go about making their contribution?
+    - I want to help improve Rasa
+    - I want to help the cause.
+    - I want to make Rasa better
+    - I want to offer assistance
+- intent: ask_why_contribute
+  examples: |
+    - What can I bring to help your code
+    - What is the benefit of contributing to your code
+    - Why add to your business?
+    - Why aid your opportunity?
+    - Why be a part of your mission?
+    - Why contribute to Rasa?
+    - Why do I want to help with your code
+    - Why help Rasa's organization?
+    - Why should I add to your code
+    - Why should I contribute
+    - Why should I contribute to Rasa
+    - Why should I contribute to your code?
+    - Why should I devote effort to working on your code
+    - Why should I devote time to your code
+    - Why should I help to improve Rasa
+- intent: contact_sales
+  examples: |
+    - But I wanted a sales call
+    - Can I have a call tomorrow at 3pm?
+    - Can I have a call?
+    - HOW CAN I BOOK A SALES CALL ?
+    - How can i contact the team ?
+    - I also want to book a sales call
+    - I wanna have a subscription for your product
+    - I wanna talk to your sales guy
+    - I wanna talk to your sales people.
+    - I want a sales call
+    - I want an offer for your platform
+    - I want to book a call
+    - I want to book a call with your sales team
+    - I want to buy the rasa platform
+    - I want to contact sales
+    - I want to contact the sales team
+    - I want to get in touch with your sales guys
+    - I want to learn more about your pricing
+    - I want to speak with sales
+    - I want to talk to sales
+    - I want to talk to someone about your pricing system
+    - I want to talk to your sales guys
+    - I want to talk to your sales people
+    - I want to talk to your sales team
+    - I want to talk with sales about our project
+- intent: enter_data
+  examples: |
+    - $1
+    - 1 euro
+    - 10000 dollars
+    - 10000000
+    - 100000k
+    - 10000k
+    - 100k
+    - 150,000 USD
+    - 150,000$/ year
+    - 2 euro
+    - 20k
+    - 240k/year
+    - 400 trilion
+    - 5 bucks
+    - 5 euros
+    - 5 mln
+    - 50,000 dollar
+    - 50,000,000 INR
+    - 50k
+    - 60 million INR
+    - 75000-150000 euro
+    - A customer service bot
+    - A wolf bot
+    - ACME bank
+    - ACME brands
+    - Able to integrate with paypal, wordpress, facebook andd twilio
+    - An ice cube bot
+    - Country names
+    - Evaluate Rasa :-)
+    - Flexible, but looking for low-cost alternative to proof of concept
+    - I am [Christina Sullivan](name)
+    - I am [Hattie Rice](name)
+    - I am [Robert Starks](name)
+    - I am a [Data Scientist](job_function)
+    - I am a [data scientist](job_function)
+    - I am a [head of business intelligence](job_function)
+    - I am a driver
+    - I am responsible for our [innovation department](job_function)
+    - I book a bus ticket
+    - I do not know yet
+    - I spend money
+    - I wanna build a bot that sends the people cute animal pictures based on their favorite color
+    - I wanna build a super bot to send me cute animal pictures
+    - I want a bot that sales my product that [Catherine Rodriguez](name) finally can focus on important stuff
+    - I want to build a bot that can substitute our entire workforce
+    - I want to build a cool bot
+    - I want to build a health insurance bot
+    - I want to build a kick ass bot
+    - I want to build a lot of different bots
+    - I want to build a sales bot
+    - I want to build an FAQ bot
+    - I want to use pip
+- intent: how_to_get_started
+  examples: |
+    - can you help me to build a bot
+    - can you tell me how to build a bot?
+    - About [Core](product)
+    - Can I build a FAQ robot with Rasa?
+    - Can you shw me some information about intallation?
+    - I wanted to build a bot my product customer support
+    - Can you tell me more about [NLU](product)?
+    - Get started
+    - HOW CAN i connect to rasa
+    - Help me get started
+    - Hi, how can i get started with [rasa x](product)
+    - Hot to get started with rasa
+    - How can I develop a bot?
+    - How can I get started with Rasa
+    - How can I get started with Rasa?
+    - How can I get started with rasa?
+    - How can I get started?
+    - How can I start with RASA on a legacy windows without Python?
+    - How can I try out Rasa?
+    - How can i launch a bot?
+    - How do I build a bot
+    - How do I download RASA
+    - How do I download rasa ?
+    - How do I get started
+    - How do I get started with Rasa?
+    - How do I get started?
+    - How do I start
+    - How do i get started
+    - How get started?
+    - How to build a bot in rasa
+    - How to download?
+    - How to get start
+    - How to get started
+    - How to get started with Rasa
+    - How to get started with Rasa [core](product)?
+- intent: install_rasa
+  examples: |
+    - Can you get me Rasa [Core](product)?
+    - Can you help me to install Rasa?
+    - Do you mind helping me install Rasa?
+    - Help me get Rasa [Core](product).
+    - Help me install Rasa
+    - How do I install Rasa Stack?
+    - How i install
+    - How to install Rasa
+    - How to install Rasa Stack
+    - How to install Rasa [Core](product)?
+    - How to install Rasa?
+    - How to install rasa
+    - How to install rasa stack
+    - I have chosen Rasa Stack
+    - I have decided on Rasa Stack
+    - I need Rasa Stack
+    - I need Rasa Stack.
+    - I need assistance in getting Rasa Stack.
+    - I need to get Rasa Stack up and running.
+    - I need to install Rasa
+    - I need to install Rasa [Core](product).
+    - I need to install Rasa [NLU](product).
+    - I require Rasa Stack?
+    - I think I want to install Rasa Stack
+    - I want info on installing Rasa
+    - I want to do a Rasa Stack installation
+    - I want to install Rasa Stack
+    - I want to install Rasa [Core](product)
+    - I want to install rasa
+    - I want to use Rasa Stack
+    - I'd like to install Rasa [Core](product)
+    - I'd like to install Rasa [NLU](product)
+    - I'd like to perform an installation of Rasa Stack
+    - I'm getting Rasa Stack
+    - I'm going to install Rasa Stack
+    - I'm installing Rasa Stack
+    - Installing Rasa Stack will be extremely helpful to me.
+    - Installing rasa
+    - Its urgent for me to install Rasa.
+    - Just install Rasa Stack
+    - Let me install Rasa Stack.
+    - Please assist me with installing Rasa Stack.
+    - Please help me install Rasa Stack
+    - Please install Rasa Stack
+    - Please, I need Rasa [Core](product).
+    - Rasa Stack is what I will be installing
+    - Thank you in advance for suggesting I install Rasa [NLU](product).
+    - Where to get Rasa Stack?
+    - Yes, I do need Rasa Stack.
+    - am struck with installation
+    - am struck with installation of rasa [nlu](product) and [core](product) in my mac book
+    - can i run rasa on my computer?
+    - can you help me with installation
+    - can you help me with installation of rasa [nlu](product) and train my first bot
+    - download
+    - dude, i want install rasa
+    - having some problems with installation
+    - help me wih the installation
+    - hi i am not able install rasa demo in my machine
+    - how can I install RASA
+    - how can i install python
+    - how can i install rasa
+    - how do I install Rasa
+    - how do I install it?
+    - how do I install rasa in windows
+    - how do I install rasa?
+    - how do I run rasa on windows
+    - how do i install
+    - how do i install rasa?
+    - how to install
+    - how to install on window
+    - how to install rasa [core](product)?
+    - how to install rasa in my system
+    - how to install rasa on windows?
+    - how to install rasa stack
+    - how to install rasa?
+    - how to install rasa_nlu
+    - how to install sara in my server
+    - how to install the rasa stack
+    - i need help setting up
+    - i need to download rasa
+    - i want to install
+    - i want to install rasa
+    - i want to use pip to install sara
+    - install
+    - install Rasa [NLU](product)
+    - install Rasa on Linux
+    - install Rasa on Mac
+    - install rasa stack
+    - please tell steps for installing chatbot
+    - what do I need to install Rasa
+    - what sould i do to install rasa
+    - installation steps of rasa
+    - how can I install [rasa open source](product)?
+    - How to download rasa
+    - where do i download rasa
+    - I have a specific question regarding installation
+- intent: nlu_generation_tool_recommendation
+  examples: |
+    - are there simpler ways to create [nlu](product) data
+    - are there tools to create [nlu](product) data
+    - how can I get [nlu](product) data
+    - how to work with [nlu](product) data
+    - i have to less [nlu](product) data
+    - i need more [nlu](product) data
+    - i require more [nlu](product) data
+    - need more data for [nlu](product)
+    - recommend me some [nlu](product) tools
+    - where can i get data for the [nlu](product)
+    - which tools can I use to create [nlu](product) data
+    - How to generate [NLU](product) using frontend.
+    - [NLU](product) data  generation
+    - i want a recommendation for an [nlu](product) data generation tool
+- intent: nlu_info
+  examples: |
+    - I checked the documentation on [entity recognition](nlu_part) but I still don’t understand it
+    - I checked the documentation on [intent classification](nlu_part) but I still don’t understand it
+    - I don’t understand [entity recognition](nlu_part)
+    - I don’t understand [intent classification](nlu_part)
+    - I don’t understand how you handle [entity recognition](nlu_part) at Rasa
+    - I don’t understand how you handle [intent classification](nlu_part) at Rasa
+    - I still don’t get how [entity recognition](nlu_part) works
+    - I still don’t get how [intent classification](nlu_part) works
+    - I want to know if rasa works with [duckling](nlu_part)
+    - I want to learn about [entity recognition](nlu_part)
+    - I want to learn about [intent classification](nlu_part)
+    - I was looking for [Duckling](nlu_part) integration
+    - Rasa NLu
+    - Tell me about the [entity extraction](nlu_part)
+    - Tell me about the [entity recognition](nlu_part)
+    - [Entity recognition](nlu_part)
+    - [NER](nlu_part)
+    - [duckling](nlu_part)
+    - [entity recognition](nlu_part)
+    - [entity recognition](nlu_part) - what is that?
+    - [intent classification](nlu_part)
+    - [intent classification](nlu_part) - what is that?
+    - [intent classificaton](nlu_part)
+    - [intent recognition](nlu_part)
+    - [intent](nlu_part)
+    - [intent](nlu_part) please
+    - [intents](nlu_part)
+    - [recognition](nlu_part)
+    - an explanation of how [entity recognition](nlu_part) work would help
+    - an explanation of how [intent classification](nlu_part) work would help
+    - can you explain me what [intents](nlu_part) are ?
+    - can you explain to me how [entity recognition](nlu_part) works?
+    - can you explain to me how [intent classification](nlu_part) works?
+    - custom [ner](nlu_part)
+    - do you use [duckling](nlu_part)
+    - does rasa work with [duckling](nlu_part)?
+    - hm [intents](nlu_part)?
+    - how do you integrate [duckling](nlu_part)
+    - how does [entity recognition](nlu_part) work?
+    - how does [intent classification](nlu_part) work?
+    - how is [entity recognition](nlu_part) managed in rasa?
+    - how is [intent classification](nlu_part) managed in rasa?
+    - is [duckling](nlu_part) part of rasa?
+    - it would be helpful to learn more about [entity recognition](nlu_part)
+    - it would be helpful to learn more about [intent classification](nlu_part)
+    - sorry its [ner](nlu_part)
+    - tell me about [entity recognition](nlu_part)
+    - tell me about [intent classification](nlu_part)
+    - the [intent](nlu_part)
+    - what are [intents](nlu_part) ?
+    - what are [intents](nlu_part)?
+    - what does [nlu](product) stands for
+    - what is [duckling](nlu_part)
+    - what is [duckling](nlu_part)?
+    - what is [entity recognition](nlu_part)?
+    - what is [intent classification](nlu_part)?
+    - what is [intent recognition](nlu_part)?
+    - what is a [intent](nlu_part)?
+    - where to [intents](nlu_part)?
+    - where to train [intents](nlu_part) in rasa?
+    - what does NLU server do?
+    - how enttity extrcation works
+- intent: pipeline_recommendation
+  examples: |
+    - I don’t know which pipeline to use
+    - can you help me with the pipeline?
+    - give me a recommendation
+    - pipeline
+    - pipeline recommendation
+    - recommend pipeline
+    - should I better start with the tensorflow pipeline or spacy?
+    - spacy or tensorflow, what is better to start?
+    - what I a good pipeline to start with?
+    - what [nlu](product) pipeline would you recommend?
+    - what is the right pipeline to choose?
+    - what pipeline is better for what i want?
+    - what pipeline is better?
+    - what pipeline should I start with?
+    - what pipeline should i use?
+    - which pipeline is better?
+    - nlu pipeline
+    - how to build a pipelin
+    - how to build a pipeline for the bot
+- intent: signup_newsletter
+  examples: |
+    - I also want to subscribe
+    - I wanna sign up for the newsletter.
+    - I want the newsletter
+    - I want to sign up for the newsletter
+    - I want to sign up for the newsletter.
+    - I want to subscribe to your newsletter
+    - I want to subscribing to the Rasa newsletter
+    - I would like to sign up for the newsletter.
+    - I would love to subscribe to a newsletter!
+    - I'd like to subscribe
+    - I'll subscribe to the newsletter
+    - Newsletter
+    - Newsletter please.
+    - Sign me up for the newsletter.
+    - Sign up.
+    - Subscribe
+    - Subscribe me to the newsletter please!
+    - Subscribe me to you newsletter
+    - Subscribe newsletter
+    - Subscribe to Rasa newsletter
+    - add me as your subscriber
+    - add me to the newsletter
+    - add me to the newsletter list
+    - add me to the subscription list
+    - but please sign me up for the newsletter!
+    - can i get emails from you
+    - can i sign up to the newsletter too?
+    - can i subscribe to news letter
+    - can you add Edward@Paul.com to the newsletter list?
+    - can you pelase subscribe me to the newsletter
+    - can you sign me up for the newsletter
+    - can you subscribe me to the newsletter
+    - do the newsletter then
+    - first lets sign up for the newsletter
+    - get a subscription
+    - get newsletter
+    - get the latest news from Rasa
+    - get the newsletter
+    - gimme the newsletter
+    - hello sara, can you subscribe me to the newsletter?
+    - how about the newsletter
+    - how about the newsletter signup
+    - how to subdcribe?
+    - i also want to sign up for the newsletter
+    - i go for the newsletter
+    - i just want to signup for our newsletter
+    - i just want to signup for your newsletter
+    - i need the newsletter
+    - i need this dope newsletter
+    - i need to be on the newsletter list
+    - i prefer to get the newsletter
+    - i want newsletter
+    - i want on that dope newsletter
+    - i want on this dope newsletter - my email is R_Grove@gmail.com
+    - i want subscribe
+    - i want the newsletter
+    - i want to  suscribe
+    - i want to be part of the newsletter
+    - i want to get the newsletter
+    - i want to join the newsletter list
+    - i want to join the newsletter mails
+    - i want to receive the newsletter emails
+    - i want to receive the newsletter from now on
+    - i want to receive your nl
+    - i want to sign up for the newsletter
+    - i want to signup
+    - i want to signup for the newsletter
+    - i want to signup for the nl
+    - i want to signup for your newsletter
+    - i want to subscribe
+    - i want to subscribe to the newsletter with Joseph_Pyles@yahoo.com
+    - i want to subscribe to your newsletter
+    - i want to subsribe to the newsletter
+    - i would like to join the newsletter
+    - i would like to subscribe
+    - i would like to subscribe to your newsletter
+    - i would love to get the newsletter
+    - i would love to receive the rasa newsletter
+    - i'd like your newspaper please
+    - i'm craving the newsletter
+    - id like to receive the newsletter
+    - id like to subscribe
+    - join that newsletter
+    - let's make a subscribtion
+    - lets do the newsletter signup
+    - lets try the newsletter registration
+    - lets try the newsletter signup
+    - may i receive the newsletter from now on
+    - newletter
+    - news
+    - newsletter
+    - newsletter - my email is Mabel@Brown.com
+    - newsletter it is
+    - newsletter please
+    - newsletter please my email is M_Moore@yahoo.com
+    - newsletter pls
+    - newsletter registration
+    - newsletter registration first
+    - newsletter subscription
+    - newsletter, here is my email: Marcus.Miller@yahoo.com
+    - newslettwr
+    - nl
+    - now i want to signup for the newsletter
+    - oh actually i want to get the newsletter
+    - please send me the newsletter
+    - please send newsletter to Robert@yahoo.com
+    - please sign me up for the newsletter
+    - please subscribe me to the newsletter gregory_lilley@yahoo.com
+    - please subscribe me to your newsletter
+    - register me for the newsletter
+    - send me the newsletter
+    - sign me up for that newsletter
+    - sign me up for the newsletter - my email is Carolyn_Caskey@yahoo.com
+    - sign me up for the rasa newsletter
+    - sign up
+    - sign up for newsletter
+    - sign up for the NL
+    - sign up newsletter
+    - sign up to the newsletter
+    - subcribe
+    - subscribe
+    - subscribe Bruce_harryman@Olsen.com to the newsletter
+    - subscribe Denise@gmail.com to the newsletter
+    - subscribe me to newsletter
+    - subscribe me to the newsletter
+    - subscribe my email Evan@Palmer.net to the newsletter
+    - subscribe to newsletter
+    - subscribe to our newsletter
+    - subscribe to the newsletter
+    - subscribe to your newsletter
+    - subscribing to our newsletter
+    - subscrime me
+    - subscription newsletter
+    - subsribing to our newsletter
+    - to make a subscribtion
+    - what about signing up for the newsletter?
+    - yeaaah lets go for the newsletter
+    - yeah how about the newsletter
+    - yes I would like to subscribe
+    - yes subscribe me
+    - yes.I.would.like.to.subscrbe
+- intent: source_code
+  examples: |
+    - Can u tell where is ur code
+    - Where can I find your source code?
+    - Where can i find the source code
+    - can i know your source code ?
+    - can i look at your source code
+    - can i see your code
+    - demo bot source code
+    - do u give me the code
+    - hey can you provide me the code of yours
+    - how can i get the code for the demo bot?
+    - how do u work?
+    - how it works?
+    - how to get the source code
+    - i need source code
+    - i need the source code to this bot
+    - i want to use your source code
+    - is your code available?
+    - source code
+    - we want to have full code of rasa chatbot
+    - what is your source code
+    - what's your source code?
+    - where can I download the source code?
+    - where can I find the rasa source code?
+    - where can i find this code
+    - where is the source code?
+    - where is your source code
+    - what is your github link
+    - yes with your source code
+    - your code
+    - your code please
+    - i need nlu.md file
+    - i need smalltalk.md file
+    - source
+    - github link?
+- intent: switch
+  examples: |
+    - How to migrate from [DialogFlwo](current_api)
+    - Do you have any tutorials how to migrate from [dialogflow](current_api)?
+    - How to migrate a bot from [DialogFlow](current_api) to Rasa?
+    - How to migrate from [DialogFlow](current_api) to Rasa?
+    - How to migrate from [DialogFlow](current_api)?
+    - How to migrate from [Luis](current_api)?
+    - How to migrate to [DialogFlow](current_api)?
+    - I am using [dialogflow](current_api) - how can I migrate
+    - I currently use [LUIS](current_api)
+    - I currently use [dialog flow](current_api)
+    - I use [DialogFlow](current_api)
+    - I use [luis](current_api)
+    - I use [wit.ai](current_api)
+    - I want to change from [dialogflow](current_api) to rasa
+    - I want to convert my [dialog flow](current_api) bot to rasa
+    - I want to move from [LUIS.ai](current_api) to Rasa
+    - I want to switch from [dialog flow](current_api)
+    - I want to switch from [dialogflow](current_api) to rasa
+    - Migration please
+    - Yes I want to switch from [LUIS](current_api) to rasa
+    - [DialogFlow](current_api)
+    - [LUIS](current_api)
+    - [bot framework](current_api)
+    - [chatfuel](current_api)
+    - [luis.ai](current_api)
+    - [luis](current_api)
+    - [luis](current_api) bot can migrate to raza bot ?
+    - [wit](current_api)
+    - can i migrate my [luis](current_api) bot to raza
+    - can i switch from [luis](current_api) to rasa?
+    - how can i migrate from [dialogflow](current_api)?
+    - how do you switch from [dialogflow](current_api)
+    - how to export [dialogflow](current_api) data to rasa
+    - i am switching from [luis](current_api)
+    - i can migrate microsoft [luis](current_api) bot to raza?
+    - i want to switch from [luis](current_api) to rasa
+    - i'm migrating from [LUIS](current_api)
+    - im migrating from [dialogflow](current_api)
+    - im moving [luis](current_api)
+    - migration from [LUIS](current_api)
+    - migration from [dialogflow](current_api)
+    - switching
+    - switching from [DialogFlow](current_api)
+    - migrate to rasa
+    - how to migrate my bot to rasa
+    - switch to rasa from another platform
+    - migrate to rasa from another tool
+    - switch to rasa
+    - from which tools can I migrate to rasa?
+    - can I migrate to rasa from another tool?
+    - [dialogflow](current_api) and implementation from scratch
+    - how to migrate to [dialogueflow](current_api)
+    - switch from [dilogueflow](current_api)
+    - how do i migrate from [dialogflow](current_api)
+- intent: technical_question
+  examples: |
+    - how to restart the rasa server
+    - i don't want to run rasa, i want to restart it
+    - action_restart in rasa
+    - i want to know restart action
+    - how can i restart conversation on chatbot
+    - how to restart story if am drooping in between
+    - how to restart rasa
+    - how to restart the rasa
+    - how to restart rasax
+    - docker is restarting
+    - restart server
+    - I am not able to restart action in some action
+    - how to restart rasa?
+    - how do you restart a story?
+    - Create ecommerce bot
+    - How can I visualise conversation flow?
+    - How many languages does Spacy support?
+    - and your REST API doesn't work
+    - can i makae rest calls
+    - can we use regex is rasa code
+    - does it support AI
+    - how do you retrieve previous messages
+    - how many words can you handle?
+    - how to use flask?
+    - how to visualise dialogue flow
+    - is this test compatible with linux?
+    - what database rasa use
+    - what is significance of domain.yml file
+    - what is the policy
+    - will this work on windows server
+    - work with buttons?
+    - can I install this on a mac?
+    - database rasa is using
+    - what is the difference between you and LUIS
+    - what is the latest version of rasa?
+    - Can I use Rasa for E-Mail
+    - Can you send messages based on events?
+    - How did rasa works?
+    - How do I use ngrok with [rasa x](product)?
+    - I want to know more about tracker
+    - What is the difference between entities and slots?
+    - Where can I get the source code of Rasa?
+    - Which other tools can be used to create chatbots?
+    - an I use Rasa for e-mail applications
+    - any open source GUI rasa have?
+    - any other tools to create chatbots?
+    - can i install on may mac
+    - can rasa run standalone
+    - db processing
+    - do you have docker image for rasa?
+    - does rasa support prestashop?
+    - hey can i run this onpremise
+    - how about interactive learning
+    - how can I get a docker image
+    - how can I train data
+    - how can i deploy my server on production?
+    - how i deploy my bot on production server?
+    - how to get the metadata file
+    - how to integrate RASA with customer data?
+    - how to use formaction
+    - how to use form actions
+    - how to use forms
+    - interactive learning?
+    - is rasa core able to run standalone?
+    - ok quick question here do i download this api
+    - tensorflow 1.10.0 has requirement numpy<=1.14.5,>=1.13.3, but you'll have numpy 1.16.0 which is incompatible.
+    - training model?
+    - what are the features does rasa have?
+    - what does on-premise mean?
+    - what infrastructure is required to run a bot?
+    - what is a synonym called?
+    - what is endpoint
+    - what is pip?
+    - what is the last version of rasa [core](product)?
+    - what technologies did u use to create more mature chatbot?
+    - what's pip
+    - yes what if i have to code open end responses into some categories
+    - best policies to be used
+    - Deploy to a Server
+    - Hello, Sara. How can I configure [etnity extraction](nlu_part) for [russian](language) lnguage?
+    - can I use Rasa with my Raspberry Pi
+    - Can I run Rasa on a raspberry pi ?
+    - can I run rasa on a raspberry pi
+    - Can I run rasa on a raspberry pi ?
+    - Is it possible to integrate Rasa with Android to run on mobile devices
+    - What is the min requirements to run rasa
+    - TypeError: 'module' object is not callable
+    - deploy rasa chat bot in flask
+    - How can i automate retraining of my rasa models
+    - can i user rasa for my text classification problem?
+    - how to initialize a new project?
+    - how to train model
+    - what are the policy available
+    - i need help with policies
+    - how to connect mongodb
+    - what is fallback policy in rasa
+    - what is a webhook
+    - how to handle sending scheduled message to custom webhooks
+    - actions
+    - actions on rasa
+    - how to add dropdowns?
+    - replace default nlu with custom component
+    - which technology is used to create you
+    - rasa-core error
+    - I am getting some error
+    - I have a problem
+    - I need help with a problem
+    - can you help me with this problem
+    - can you help with some documentation
+    - conda threw some weird error
+    - conda throws some unexpected error
+    - getting some error
+    - i am having trouble setting this up
+    - technical side of things?
+    - there is error
+    - why do I get errors using rasa?
+    - there are some python incompatibilities
+    - can this be integrated with mongo db
+    - Can you help me with forms
+    - can tell me about rasa_sdk
+    - rasa sdk
+    - where is rasa sdk?
+    - Do you have a python sdk?
+    - RASA sdk
+    - do RASA has sdk to develop bot
+    - python sdk
+    - how to run sdk endpoint in background
+    - sdk
+    - where can i find api documentation for rasa x
+    - where is the api for rasa x
+    - Hello, where can I find the paper about DIET?
+    - Is there a technical paper about DIET?
+    - domain
+    - How do I get yes / no answer buttons
+    - I am searching the changlog
+    - rasa templates
+    - how to add in my website
+    - php
+    - php code
+    - what is the difference between slot and entity
+    - is slot teh same as entity
+    - what should I do when I want to use a binary slot
+    - How d I use a boolean slot
+    - what  are values of a boolean slot
+    - fallback
+    - stories files
+    - use of stories files
+    - installation error
+    - bash: poetry: command not found
+    - Can i use NLU on its own
+    - do we need to write training data nlu.md
+    - For training data, to we need to exclusively write the file in MD format?
+    - How can i talk to RASA through the url
+    - what is action server
+    - is it a best practice to connect an external cms
+    - can you show me buttons
+    - I'd like to handle chitchat
+    - Can Rasa be incorporated into iOS apps?
+    - how to implement buttons
+    - buttons
+    - implement buttons
+    - I want to build RASA DIET in google colab
+    - tensorflow-text
+    - installation of tensorflow-text
+    - ConveRTFeaturizer
+    - whatsapp bro
+    - What does the NLU pipeline do
+    - what does the nlu pipeline do
+    - What is DIET
+    - how can create multilingual chatbor
+    - websocket
+    - hosting
+    - host models
+    - What is COnvert?
+    - Hi the command rasa init doesn't do anything in windows
+    - what is the knowledge base server
+    - testing chatbot
+    - what is knowledge base
+    - knowledge base action
+    - multipass issue
+    - embeddings
+    - how to write stories to train rasa
+    - tell me about the nlu training data format
+    - how can i get data from a database and use them as a response to a question?
+    - how to add a database?
+    - I want to integrate a database and look up values based on an entity the user gave me. How is this possible?
+    - what is default fall back
+    - fallback actions
+    - what is custom actions
+    - I am facing some issues with LMS
+    - my nlu cant detect entities
+    - how do i detect entities
+    - how to evaluate model
+    - Can I have multiple .md data files?
+    - response selector?
+    - does mongodb works for rasax
+    - tensorflow
+    - credentials.yml
+    - credentials
+    - how can I use transformers
+    - how long to train
+    - what model do you use
+    - technical question
+    - rasa core agent information
+    - rasa shell
+    - what is an intemt
+    - Rasa provides me recall and precision?
+    - i want to run rasa x in ibm cloud
+    - how to build stories
+    - testing
+    - whats tensorflow
+    - what is a custom action?
+    - which python libraries are used
+    - Should I run the 'rasa init' command in the anaconda prompt ?
+    - Where to run rasa init command ?
+    - how to set threshold ?
+    - how to you exit the server
+    - is Rasa works with Unity3d?
+    - rasa uses deep learning ?
+    - i want to extract predefined entity from user query
+- intent: restart
+  examples: |
+    - yep you can restart
+    - Please restart this chat/
+    - ok restart please
+    - please restart the bot
+    - restart this conversation
+    - i want to restart
+    - why don't you restart????
+    - hey, i said restart
+    - restart session pls
+    - restart ps
+- intent: canthelp
+  examples: |
+    - I think you cant help me
+    - and that's it?
+    - and you call yourself bot company? pff
+    - do you get anything?
+    - exit
+    - exit now
+    - hey, you promised to contact me, but nobody did, I really need to finish that car insurance bot!!!!
+    - hm i don't think you can do what i want
+    - i guess you can't help me then
+    - nothing else?
+    - ok i guess you can't help me
+    - ok then you cant help me
+    - ok, but that doesnt help me
+    - stop
+    - stop go back
+    - stop this conversation
+    - that was shit, you're not helping
+    - that's not what i want
+    - this conversation is not really helpful
+    - this is leading to nothing
+    - you can't help me
+    - you can't help me with what i need
+    - you cannot help me with what I want
+    - you cant help me
+    - quit
+    - that does not help
+- intent: explain
+  examples: |
+    - can you elaborate
+    - could you explain why you need that
+    - could you tell me more
+    - explain it to me
+    - explain that
+    - i want more information
+    - i would like to know why you need that
+    - please elaborate
+    - please explain
+    - why do you need to know that
+    - why is that necessary
+    - give me more details
+    - why
+    - what do you mean
+    - what does that mean
+    - how come?
+- intent: next_step
+  examples: |
+    - continue to next step
+    - go to the next step
+    - i have to go to the next step
+    - i want next step
+    - i want to go to the next step
+    - next please
+    - next step
+    - next step now
+    - next step please
+    - next step pls
+    - ok continue please
+    - ok, next step
+    - please go to the next step
+    - take me to the next step
+    - what is the next step ?
+- intent: react_negative
+  examples: |
+    - I am feeling bad
+    - I am sad
+    - I am super sad
+    - I'm sad
+    - I'm super sad
+    - Now I'm sad
+    - This is bad
+    - You are quite bad
+    - bad
+    - bad boy
+    - crappy joke
+    - documentation of rasa is very bad
+    - i am angry over you
+    - i am feel sad
+    - i am sad
+    - i am sad about that
+    - i am very sad
+    - i feel sad
+    - i sad
+    - i'm sad
+    - rasa is bad
+    - sad
+    - so sad
+    - so sad :(
+    - super sad
+    - u broke my heart
+    - very very sad
+    - you are bad
+    - you are bad bot
+    - you make me sad
+    - You are mad
+    - You are rude
+    - bots are bad
+    - i don't care!!!!
+    - i dont like bots
+    - this is a really frustrating experience
+    - you're rather dull
+    - i am so worry
+    - i will leave
+    - Although I understand your still in development, I feel a little bit disappointed.
+    - Surely you're not so smart lik i thought
+    - iam not feeling good
+    - not good
+    - Thats so rude
+    - sadly
+    - That tool here isnt good
+    - boring
+- intent: thank
+  examples: |
+    - Cool. Thanks
+    - Great, thanks
+    - Thank you
+    - Thank you Sara
+    - Thank you so much
+    - Thank's!
+    - Thanks
+    - Thanks bot
+    - Thanks for that
+    - Thanks!
+    - amazing, thanks
+    - cheers
+    - cheers bro
+    - cool thank you
+    - cool thanks
+    - cool, thanks
+    - danke
+    - great thanks
+    - ok thanks
+    - ok thanks sara
+    - ok thanks!
+    - perfect thank you
+    - thank u
+    - thank you
+    - thank you anyways
+    - thanks
+    - thanks a bunch for everything
+    - thanks a lot
+    - thanks for forum link, I'll check it out
+    - thanks for the help
+    - thanks this is great news
+    - thanks you
+    - thanks!
+    - thankyou
+    - thnks
+    - thx
+    - yes thanks
+    - thanks for your information
+    - thanks f
