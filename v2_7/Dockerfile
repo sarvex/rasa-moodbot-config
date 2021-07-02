@@ -1,0 +1,4 @@
+FROM rasa/rasa:2.7.0-full
+
+
+USER root
