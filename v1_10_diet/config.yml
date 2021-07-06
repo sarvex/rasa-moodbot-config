@@ -1,0 +1,40 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: en
+pipeline:
+- name: WhitespaceTokenizer
+- name: "CountVectorsFeaturizer"
+  strip_accents: ascii
+  lowercase: true
+  stop_words:  [ "orange","ca","de","la", "le", "les", "leur", "leurs", "lui", "la", "m", "ma", "maintenant", "me", "mes", "moi", "mon", "nos", "notre", "sa", "ses", "ta", "te","tes", "ton", "trop", "tres", "un", "une", "des", "vos", "votre", "vous", "de", "à", "avec", "depuis","sur","tellement","que","quand","en","lorsque"]
+- name: "CountVectorsFeaturizer"
+  strip_accents: "ascii"
+  lowercase: true
+  analyzer: "char_wb"
+  min_ngram: 1
+  max_ngram: 4
+- name: "DIETClassifier"
+  epochs: 300
+  hidden_layers_sizes: 
+    text: [256, 128]
+  number_of_transformer_layers: 0
+  weight_sparsity: 0
+  intent_classification: True
+  entity_recognition: False
+  use_masked_language_model: False
+  BILOU_flag: False
+  random_seed: 1
+- name: "CRFEntityExtractor"
+  features: 
+    - ["low", "title", "upper"]
+    - ["low", "bias", "prefix5", "prefix2", "suffix5", "suffix3", "suffix2", "upper", "title", "digit", "pattern"]
+    - ["low", "title", "upper"]
+- name: "EntitySynonymMapper"
+
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+  - name: MemoizationPolicy
+  - name: KerasPolicy
+  - name: MappingPolicy

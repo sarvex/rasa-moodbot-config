@@ -1,0 +1,34 @@
+[
+  {
+    "text": "sad",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.7735604643821716
+    }
+  },
+  {
+    "text": "bad",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.6766316890716553
+    }
+  },
+  {
+    "text": "so sad",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "react_negative",
+      "confidence": 0.8483051061630249
+    }
+  },
+  {
+    "text": "How to download rasa",
+    "intent": "install_rasa",
+    "intent_prediction": {
+      "name": "how_to_get_started",
+      "confidence": 0.6136831641197205
+    }
+  }
+]

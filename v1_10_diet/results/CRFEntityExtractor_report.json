@@ -5,11 +5,11 @@
     "f1-score": 1.0,
     "support": 8
   },
-  "job_function": {
+  "current_api": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 10
+    "support": 57
   },
   "nlu_part": {
     "precision": 1.0,
@@ -17,17 +17,17 @@
     "f1-score": 1.0,
     "support": 94
   },
+  "job_function": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 10
+  },
   "product": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 42
-  },
-  "current_api": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 57
   },
   "language": {
     "precision": 1.0,
