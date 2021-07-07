@@ -30,8 +30,9 @@ jobs:
           rasa_test: true
           data_validate: false
           workspace: ${{ github.workspace }}/v2
-          test_type: all
           publish_summary: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
           cross_validation: true
+          test_args: '--folds 3'
+          test_type: all
 
