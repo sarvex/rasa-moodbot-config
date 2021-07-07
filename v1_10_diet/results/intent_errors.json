@@ -4,7 +4,7 @@
     "intent": "mood_unhappy",
     "intent_prediction": {
       "name": "react_negative",
-      "confidence": 0.7735604643821716
+      "confidence": 0.5895357131958008
     }
   },
   {
@@ -12,7 +12,7 @@
     "intent": "mood_unhappy",
     "intent_prediction": {
       "name": "react_negative",
-      "confidence": 0.6766316890716553
+      "confidence": 0.5451618432998657
     }
   },
   {
@@ -20,15 +20,7 @@
     "intent": "mood_unhappy",
     "intent_prediction": {
       "name": "react_negative",
-      "confidence": 0.8483051061630249
-    }
-  },
-  {
-    "text": "How to download rasa",
-    "intent": "install_rasa",
-    "intent_prediction": {
-      "name": "how_to_get_started",
-      "confidence": 0.6136831641197205
+      "confidence": 0.6135748624801636
     }
   }
 ]

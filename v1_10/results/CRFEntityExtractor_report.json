@@ -1,4 +1,16 @@
 {
+  "current_api": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 57
+  },
+  "language": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
   "name": {
     "precision": 1.0,
     "recall": 1.0,
@@ -22,18 +34,6 @@
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 42
-  },
-  "current_api": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 57
-  },
-  "language": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 1
   },
   "micro avg": {
     "precision": 1.0,

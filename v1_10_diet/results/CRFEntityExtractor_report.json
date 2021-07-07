@@ -1,4 +1,22 @@
 {
+  "product": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 42
+  },
+  "nlu_part": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 94
+  },
+  "language": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
   "name": {
     "precision": 1.0,
     "recall": 1.0,
@@ -11,29 +29,11 @@
     "f1-score": 1.0,
     "support": 57
   },
-  "nlu_part": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 94
-  },
   "job_function": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 10
-  },
-  "product": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 42
-  },
-  "language": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 1
   },
   "micro avg": {
     "precision": 1.0,

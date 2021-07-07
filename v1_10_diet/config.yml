@@ -22,6 +22,9 @@ pipeline:
   intent_classification: True
   entity_recognition: False
   use_masked_language_model: False
+  scale_loss: True
+  use_sparse_input_dropout: False
+  use_dense_input_dropout: False
   BILOU_flag: False
   random_seed: 1
 - name: "CRFEntityExtractor"
