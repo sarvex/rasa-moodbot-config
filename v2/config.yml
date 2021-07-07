@@ -16,7 +16,7 @@ pipeline:
 # this should be identical to EmbeddingIntentClassifier config in V1 according to:
 # https://rasa.com/docs/rasa/migration-guide/#rasa-17-to-rasa-18 
 - name: "DIETClassifier"
-  epochs: 300 
+  epochs: 100 
   hidden_layers_sizes: 
     text: [256, 128]
   number_of_transformer_layers: 0
