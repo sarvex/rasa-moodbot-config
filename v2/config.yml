@@ -26,6 +26,9 @@ pipeline:
   use_masked_language_model: False
   BILOU_flag: False
   random_seed: 1
+  scale_loss: True
+  use_sparse_input_dropout: False
+  use_dense_input_dropout: False
 - name: "EntitySynonymMapper"
 
 
