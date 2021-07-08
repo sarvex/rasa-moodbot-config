@@ -52,6 +52,6 @@ jobs:
           publish_summary: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
           cross_validation: true
-          test_args: '--folds 3'
+          test_args: '--folds 3 nlu'
           test_type: all
 
