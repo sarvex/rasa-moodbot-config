@@ -17,7 +17,7 @@ jobs:
           ls ${{ github.workspace }}/v2
       - run: echo "🍏 This job's status is ${{ job.status }}."
   
-  training-testing:
+  training-testing-v2:
     name: Training and testing a rasa 2.X bot
     runs-on: ubuntu-latest
     steps:
@@ -30,6 +30,25 @@ jobs:
           rasa_test: true
           data_validate: false
           workspace: ${{ github.workspace }}/v2
+          publish_summary: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          cross_validation: true
+          test_args: '--folds 3'
+          test_type: all
+  
+  training-testing-v1:
+    name: Training and testing a rasa 1.X bot
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Rasa Train and Test GitHub Action
+        uses: RasaHQ/rasa-train-test-gha@main
+        with:
+          rasa_version:  1.10.26-full
+          rasa_train: true
+          rasa_test: true
+          data_validate: false
+          workspace: ${{ github.workspace }}/v1
           publish_summary: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
           cross_validation: true
